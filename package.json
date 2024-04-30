@@ -2,7 +2,9 @@
   "name": "@nx-intro/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start:dev": " npx nx serve nx-intro --verbose"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~17.3.0",

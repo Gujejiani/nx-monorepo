@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@nx-intro/orders": ["libs/orders/src/index.ts"],
       "@nx-intro/product-list": ["libs/product-list/src/index.ts"]
     }
   },
