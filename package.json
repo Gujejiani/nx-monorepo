@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start:dev": " npx nx serve nx-intro --verbose"
+    "start:dev": " npx nx serve nx-intro --verbose",
+    "graph": "nx graph"
   },
   "private": true,
   "dependencies": {
