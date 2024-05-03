@@ -1,9 +1,9 @@
 /* eslint-disable */
 export default {
-  displayName: 'nx-intro',
+  displayName: 'container-app',
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../coverage/apps/nx-intro',
+  coverageDirectory: '../../coverage/apps/container-app',
   transform: {
     
     '^.+\\.(ts|mjs|js|html)$': [

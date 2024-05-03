@@ -1,9 +1,9 @@
 {
-  "name": "@nx-intro/source",
+  "name": "@container-app/source",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start:dev": " npx nx serve nx-intro --verbose",
+    "start:dev": " npx nx serve container-app --verbose",
     "graph": "nx graph"
   },
   "private": true,

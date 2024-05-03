@@ -1,23 +1,23 @@
 {
-  "name": "nx-intro",
+  "name": "container-app",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "app",
-  "sourceRoot": "apps/nx-intro/src",
+  "sourceRoot": "apps/container-app/src",
   "tags": [],
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/nx-intro",
-        "index": "apps/nx-intro/src/index.html",
-        "main": "apps/nx-intro/src/main.ts",
+        "outputPath": "dist/apps/container-app",
+        "index": "apps/container-app/src/index.html",
+        "main": "apps/container-app/src/main.ts",
         "polyfills": ["zone.js"],
-        "tsConfig": "apps/nx-intro/tsconfig.app.json",
+        "tsConfig": "apps/container-app/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": ["apps/nx-intro/src/favicon.ico", "apps/nx-intro/src/assets"],
-        "styles": ["apps/nx-intro/src/styles.scss"],
+        "assets": ["apps/container-app/src/favicon.ico", "apps/container-app/src/assets"],
+        "styles": ["apps/container-app/src/styles.scss"],
         "scripts": []
       },
       "configurations": {
@@ -51,10 +51,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "buildTarget": "nx-intro:build:production"
+          "buildTarget": "container-app:build:production"
         },
         "development": {
-          "buildTarget": "nx-intro:build:development"
+          "buildTarget": "container-app:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -62,7 +62,7 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "buildTarget": "nx-intro:build"
+        "buildTarget": "container-app:build"
       }
     },
     "lint": {
@@ -72,7 +72,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/nx-intro/jest.config.ts"
+        "jestConfig": "apps/container-app/jest.config.ts"
       }
     }
   }
