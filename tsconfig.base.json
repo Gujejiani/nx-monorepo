@@ -16,7 +16,8 @@
     "baseUrl": ".",
     "paths": {
       "@container-app/orders": ["libs/orders/src/index.ts"],
-      "@container-app/product-list": ["libs/product-list/src/index.ts"]
+      "@container-app/product-list": ["libs/product-list/src/index.ts"],
+      "@container-app/shared-ui": ["libs/shared/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

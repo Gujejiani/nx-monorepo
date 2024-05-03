@@ -6,9 +6,9 @@ export const appRoutes: Route[] = [
         loadComponent: () =>
           import('@container-app/product-list').then((m) => m.ProductListComponent),
       },
-      {
-        path: 'orders',
-        loadComponent: () =>
-          import('@container-app/orders').then((m) => m.OrdersComponent),
-      },
+      // {
+      //   path: 'orders',
+      //   loadComponent: () =>
+      //     import('@container-app/orders').then((m) => m.OrdersComponent),
+      // },
 ];
