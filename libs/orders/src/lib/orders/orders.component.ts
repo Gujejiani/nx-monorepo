@@ -1,4 +1,4 @@
-import { SharedUiComponent } from '@container-app/shared-ui';
+import { SharedUiComponent } from '@host-app/shared-ui';
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 

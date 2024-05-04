@@ -1,9 +1,9 @@
 /* eslint-disable */
 export default {
-  displayName: 'container-app',
+  displayName: 'host-app',
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../coverage/apps/container-app',
+  coverageDirectory: '../../coverage/apps/host-app',
   transform: {
     
     '^.+\\.(ts|mjs|js|html)$': [

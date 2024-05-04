@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SharedUiComponent } from '@container-app/shared-ui';
+import { SharedUiComponent } from '@host-app/shared-ui';
 
 
 @Component({

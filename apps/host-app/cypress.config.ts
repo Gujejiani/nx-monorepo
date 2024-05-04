@@ -7,8 +7,8 @@ export default defineConfig({
     ...nxE2EPreset(__filename, {
       cypressDir: 'cypress',
       webServerCommands: {
-        default: 'nx run container-app:serve',
-        production: 'nx run container-app:serve:production',
+        default: 'nx run host-app:serve',
+        production: 'nx run host-app:serve:production',
       },
     }),
   },

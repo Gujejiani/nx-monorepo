@@ -10,12 +10,12 @@ export const appRoutes: Route[] = [
     {
         path: 'products',
         loadComponent: () =>
-          import('@container-app/product-list').then((m) => m.ProductListComponent),
+          import('@host-app/product-list').then((m) => m.ProductListComponent),
       },
       
       {
         path: 'orders',
         loadComponent: () =>
-          import('@container-app/orders').then((m) => m.OrdersComponent),
+          import('@host-app/orders').then((m) => m.OrdersComponent),
       },
 ];
