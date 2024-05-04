@@ -13,7 +13,10 @@
       "!{projectRoot}/test-setup.[jt]s",
       "!{projectRoot}/**/*.stories.@(js|jsx|ts|tsx|mdx)",
       "!{projectRoot}/.storybook/**/*",
-      "!{projectRoot}/tsconfig.storybook.json"
+      "!{projectRoot}/tsconfig.storybook.json",
+      "!{projectRoot}/cypress/**/*",
+      "!{projectRoot}/**/*.cy.[jt]s?(x)",
+      "!{projectRoot}/cypress.config.[jt]s"
     ],
     "sharedGlobals": []
   },
@@ -70,5 +73,16 @@
       "style": "css"
     }
   },
-  "nxCloudAccessToken": "MTBhZWY1YzgtNTZlMy00NTM4LTkzNGEtYjk0ODQ3NGY2ZjE5fHJlYWQtd3JpdGU="
+  "nxCloudAccessToken": "MTBhZWY1YzgtNTZlMy00NTM4LTkzNGEtYjk0ODQ3NGY2ZjE5fHJlYWQtd3JpdGU=",
+  "plugins": [
+    {
+      "plugin": "@nx/cypress/plugin",
+      "options": {
+        "targetName": "e2e",
+        "openTargetName": "open-cypress",
+        "componentTestingTargetName": "component-test",
+        "ciTargetName": "e2e-ci"
+      }
+    }
+  ]
 }
