@@ -7,7 +7,7 @@
   "tags": [],
   "targets": {
     "build": {
-      "executor": "@angular-devkit/build-angular:browser",
+      "executor": "@nx/angular:webpack-browser",
       "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/apps/host-app",
@@ -18,7 +18,10 @@
         "inlineStyleLanguage": "scss",
         "assets": ["apps/host-app/src/favicon.ico", "apps/host-app/src/assets"],
         "styles": ["apps/host-app/src/styles.scss"],
-        "scripts": []
+        "scripts": [],
+        "customWebpackConfig": {
+          "path": "apps/host-app/webpack.config.ts"
+        }
       },
       "configurations": {
         "production": {
@@ -34,7 +37,10 @@
               "maximumError": "4kb"
             }
           ],
-          "outputHashing": "all"
+          "outputHashing": "all",
+          "customWebpackConfig": {
+            "path": "apps/host-app/webpack.prod.config.ts"
+          }
         },
         "development": {
           "buildOptimizer": false,
@@ -48,7 +54,7 @@
       "defaultConfiguration": "production"
     },
     "serve": {
-      "executor": "@angular-devkit/build-angular:dev-server",
+      "executor": "@nx/angular:module-federation-dev-server",
       "configurations": {
         "production": {
           "buildTarget": "host-app:build:production"
@@ -57,7 +63,10 @@
           "buildTarget": "host-app:build:development"
         }
       },
-      "defaultConfiguration": "development"
+      "defaultConfiguration": "development",
+      "options": {
+        "publicHost": "http://localhost:4200"
+      }
     },
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
