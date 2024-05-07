@@ -17,7 +17,10 @@
     "paths": {
       "@host-app/orders": ["libs/orders/src/index.ts"],
       "@host-app/product-list": ["libs/product-list/src/index.ts"],
-      "@host-app/shared-ui": ["libs/shared/ui/src/index.ts"]
+      "@host-app/shared-ui": ["libs/shared/ui/src/index.ts"],
+      "product-list-remote/Routes": [
+        "apps/product-list-remote/src/app/remote-entry/entry.routes.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]
