@@ -1,6 +1,10 @@
 import { Route } from '@angular/router';
-import { RemoteEntryComponent } from './entry.component';
 
 export const remoteRoutes: Route[] = [
-  { path: '', component: RemoteEntryComponent },
+    {
+    path: '',
+    loadComponent: () =>
+      import('@host-app/product-list').then((m) => m.ProductListComponent),
+  },
+  // { path: '', component: RemoteEntryComponent },
 ];

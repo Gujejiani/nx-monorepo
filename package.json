@@ -4,7 +4,9 @@
   "license": "MIT",
   "scripts": {
     "start:dev": " npx nx serve host-app --verbose",
-    "graph": "nx graph"
+    "graph": "nx graph",
+    
+    "remote:products": "npx nx serve --devRemotes=product-list-remote" 
   },
   "private": true,
   "dependencies": {
