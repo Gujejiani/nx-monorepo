@@ -5,6 +5,7 @@
   "prefix": "app",
   "sourceRoot": "apps/host-app/src",
   "tags": [],
+  "implicitDependencies": ["product-list-remote"],
   "targets": {
     "build": {
       "executor": "@nx/angular:webpack-browser",

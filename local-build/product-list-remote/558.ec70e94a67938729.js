@@ -1,0 +1,1 @@
+(self.webpackChunkproduct_list_remote=self.webpackChunkproduct_list_remote||[]).push([[558],{177:(d,o,t)=>{t.r(o),t.d(o,{remoteRoutes:()=>n});const n=[{path:"",loadComponent:()=>t.e(812).then(t.t.bind(t,812,23)).then(s=>s.ProductListComponent)}]}}]);

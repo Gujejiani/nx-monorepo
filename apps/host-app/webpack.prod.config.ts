@@ -3,6 +3,9 @@ import config from './module-federation.config';
 
 export default withModuleFederation({
   ...config,
+  remotes: [
+    ['product-list-remote', 'http://localhost:8080/product-list-remote'],
+  ],
   /*
    * Remote overrides for production.
    * Each entry is a pair of a unique name and the URL where it is deployed.
